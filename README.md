@@ -11,7 +11,7 @@
 
 <h3 align="left"> wrdsh.c: </h3>
 
-- There is a command structure that keeps track of one simple command (i.e. "ls -l") and holds the outfile if there is redirection
+- Contains a structure that keeps track of one simple command (i.e. "ls -l") and holds the outfile if there is redirection
 - Once the shell has taken input from the user, we parse the input based on whitespace
 - We then split the command(s) based on any redirection symbols or pipes found and put each simple command within its own struct
 - Next, we reverse the order of commands so that they will be executed in proper order
